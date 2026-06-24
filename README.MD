@@ -108,3 +108,5 @@ Choisir une licence adaptée (ex. MIT, Apache-2.0) et ajouter le fichier `LICENS
 ---
 
 Merci d'utiliser ce gestionnaire de file d'attente — voulez-vous que j'ajoute une version courte « pitch » ou une traduction complète en créole ?
+
+case close
