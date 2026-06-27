@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: pa_gen_kanpe_api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL:-sqlite:///./pa_gen_kanpe.db}
+    volumes:
+      - ./app:/app/app
+    restart: unless-stopped
