@@ -7,7 +7,7 @@ doc = Document()
 # --- Kouvèti ---
 doc.add_heading("Gestionnaire de File d’Attente pour Banques en Haïti", 0)
 doc.add_paragraph("Organiser l’attente – améliorer l’expérience client en agence\n")
-doc.add_paragraph("Auteur : Edriss Toussaint (Pyram)")
+doc.add_paragraph("Auteur : Ako Pyram")
 doc.add_paragraph("Date : Juin 2026")
 
 doc.add_page_break()
