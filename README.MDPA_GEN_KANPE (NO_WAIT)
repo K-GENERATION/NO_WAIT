@@ -1,0 +1,82 @@
+from docx import Document
+from docx.shared import Pt
+
+# Kreye nouvo dokiman
+doc = Document()
+
+# --- Kouvèti ---
+doc.add_heading("Gestionnaire de File d’Attente pour Banques en Haïti", 0)
+doc.add_paragraph("Organiser l’attente – améliorer l’expérience client en agence\n")
+doc.add_paragraph("Auteur : Ako Pyram")
+doc.add_paragraph("Date : Juin 2026")
+
+doc.add_page_break()
+
+# --- Somè ---
+doc.add_heading("Table des matières", level=1)
+sommaire = [
+    "1. Contexte",
+    "2. Objectifs",
+    "3. Fonctionnalités principales",
+    "4. Originalité du projet",
+    "5. Méthodologie",
+    "6. Résultats attendus",
+    "7. Conclusion"
+]
+for item in sommaire:
+    doc.add_paragraph(item)
+
+doc.add_page_break()
+
+# --- Contexte ---
+doc.add_heading("Contexte", level=1)
+doc.add_paragraph(
+    "Nan anpil bank ann Ayiti (UNIBANK, SOGEBANK, …), kliyan yo konfwonte ak tanperati long ak dezòd nan sèvis. "
+    "Travay sa a pwopoze yon solisyon dijital pou optimize eksperyans kliyan, redwi fristrasyon, epi bay administratè yo zouti pou kontwòl ak analiz."
+)
+
+# --- Objectifs ---
+doc.add_heading("Objectifs", level=1)
+objectifs = [
+    "Diminye tanperati vizib ak reyal.",
+    "Amelyore satisfaksyon kliyan.",
+    "Bay administratè yo rapò estatistik sou koule sèvis.",
+    "Mete aksan sou adaptasyon ak reyalite lokal Ayiti."
+]
+for obj in objectifs:
+    doc.add_paragraph(obj, style="List Bullet")
+
+# --- Fonctionnalités principales ---
+doc.add_heading("Fonctionnalités principales", level=1)
+fonctions = [
+    "Prise de ticket : tikè otomatik nan resepsyon oswa via mobil.",
+    "Appel des clients : afichaj sou ekran anndan ajans.",
+    "Suivi en temps réel : estatistik sou kantite kliyan, tan mwayen, ak rapò.",
+    "Interface administrateur : kontwòl ak rapò analitik."
+]
+for f in fonctions:
+    doc.add_paragraph(f, style="List Bullet")
+
+# --- Originalité ---
+doc.add_heading("Originalité du projet", level=1)
+doc.add_paragraph(
+    "- Entegrasyon ak telefòn mobil ki pi itilize lokalman.\n"
+    "- Solisyon ki ka mache menm ak koneksyon entènèt limite.\n"
+    "- Rapò fèt pou administratè lokal yo ak lang franse/kreyòl."
+)
+
+# --- Méthodologie ---
+doc.add_heading("Méthodologie", level=1)
+methodes = [
+    "Analiz pwoblèm nan nan bank yo.",
+    "Konsepsyon sistèm nan (tikè, apèl, rapò).",
+    "Devlopman ak tès nan anviwònman lokal.",
+    "Evalyasyon satisfaksyon kliyan ak administratè."
+]
+for m in methodes:
+    doc.add_paragraph(m, style="List Number")
+
+# --- Résultats attendus ---
+doc.add_heading("Résultats attendus", level=1)
+doc.add_paragraph(
+    "- Rediksyon—
